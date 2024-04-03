@@ -1,0 +1,9 @@
+.hero{
+    display: flex;
+}
+.text{
+    width: 50%;
+}
+.hero img{
+    width: 50%;
+}

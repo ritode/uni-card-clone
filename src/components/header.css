@@ -1,0 +1,28 @@
+.header{
+    display: flex;
+    padding: 0 45px;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (min-width: 768px){
+.logo {
+    width: 120px;
+    height: 90px;
+}
+}
+.btn{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: .75rem;
+    height: 41px;
+    border: none;
+}
+.btn:hover{
+    background-color: black;
+    color: rgba(125, 237, 221, 1);
+}
