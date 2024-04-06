@@ -1,9 +1,45 @@
-.hero{
-    display: flex;
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.text{
-    width: 50%;
+.hero h1 {
+  font-size: 54px;
+  line-height: 54px;
+  font-weight: 400;
+  margin: 0px;
 }
-.hero img{
-    width: 50%;
+.hero p {
+  font-family: "Matter-Medium", sans-serif;
+  margin-bottom: 36px;
+}
+.text {
+  width: 50%;
+}
+.hero-img {
+  width: 420px;
+}
+.bg-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.hero-ctn {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1240px;
+  margin: auto;
+}
+.bullet-pt {
+  width: 12px;
+  height: 12px;
+  margin: 0 8px;
 }

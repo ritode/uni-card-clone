@@ -1,28 +1,46 @@
-import Header from "./Header";
-import "./hero.css"
-export default function Hero() {
-    return (
-        <>
-        <Header/>
+import PhoneNumber from "./PhoneNumber";
+import "./hero.css";
+import React from "react";
+const Hero = React.forwardRef((props, ref) => {
+  return (
+    <section className="hero-ctn" ref={ref}>
       <div className="hero">
         <div className="text">
-          <h1><b>NX Wave. </b>The next-gen credit card for those who love rewards.</h1>
-          <p className="font-medium text-sm md:text-base md:mb-9">
+          <h1>
+            <b>NX Wave. </b>The next-gen credit card for those who love rewards.
+          </h1>
+          <p>
             1% Cashback
-            <svg className="mx-[8px] mb-[2px] inline leading-5" width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ mixBlendMode: 'darken' }}>
-              <path d="M6 0 1.273 4.727 0 6l1.273 1.273L6 12l4.727-4.727L12 6l-1.273-1.273L6 0Z" fill="#000"></path>
-            </svg>
+            <img
+              src="./images/bullet.svg"
+              className="bullet-pt"
+              alt="bullet-pt"
+            />
             5× Rewards
-            <svg className="mx-[8px] mb-[2px] inline leading-5" width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ mixBlendMode: 'darken' }}>
-              <path d="M6 0 1.273 4.727 0 6l1.273 1.273L6 12l4.727-4.727L12 6l-1.273-1.273L6 0Z" fill="#000"></path>
-            </svg>
+            <img
+              src="./images/bullet.svg"
+              className="bullet-pt"
+              alt="bullet-pt"
+            />
             Zero Forex Markup
           </p>
+          <PhoneNumber type="inline" />
         </div>
-        <img src="./images/nx_wave_hero.png" alt="card-asset" />
+        <img
+          src="./images/nx_wave_hero.png"
+          className="hero-img"
+          alt="card-asset"
+        />
       </div>
-      <video src="./images/nxt_wave_bg.mp4" autoPlay muted loop playsInline/>
-      </>
-    );
-  }
-  
+      <video
+        className="bg-video"
+        src="./images/nxt_wave_bg.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+    </section>
+  );
+});
+export default Hero;

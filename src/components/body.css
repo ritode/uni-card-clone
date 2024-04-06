@@ -1,0 +1,115 @@
+.body {
+  padding: 150px 0;
+}
+.sec-1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.sec-1 p {
+  margin: 0;
+}
+.sec-1 .grey {
+  font-weight: 400 !important;
+  color: #9ea7ae;
+}
+.arrow {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+.arrow-bg {
+  background: linear-gradient(140.86deg, #65ecd8 11.07%, #fdef78 80.28%);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-section {
+  max-width: 80rem;
+  margin: auto;
+}
+.ctn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 70px 2rem 60px 2rem;
+}
+.ctn img {
+  width: 280px;
+}
+@media screen and (min-width: 1024px) {
+  .ctn img {
+    width: 448px;
+  }
+}
+.ctn .black {
+  font-weight: 700;
+  font-size: 40px;
+}
+.ctn .grey {
+  font-weight: 400;
+  color: #9ea7ae;
+  font-size: 40px;
+}
+.ctn p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: rgba(158, 167, 174, 1);
+  margin-top: 2.5rem;
+}
+
+@keyframes slideFadeUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFadeDown {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Initial state: hidden */
+.textLine {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Animation trigger */
+.textLine.isVisible {
+  animation: slideFadeUp 0.8s forwards;
+}
+
+.textLine:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.textLine:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.textLine:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.textLine:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.arrow-bg.isVisible {
+  animation: slideFadeDown 1.5s forwards;
+}

@@ -1,0 +1,32 @@
+.App {
+  font-size: 16px;
+}
+@font-face {
+  font-family: "Matter-Bold";
+  src: url("../public/fonts/Matter-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Matter-Medium";
+  src: url("../public/fonts/Matter-Medium.woff2") format("woff2");
+  font-weight: 500; /* Medium font weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Matter-Regular";
+  src: url("../public/fonts/Matter-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+p,
+button,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Matter-Regular", sans-serif;
+}

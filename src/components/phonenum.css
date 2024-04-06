@@ -1,0 +1,73 @@
+.form-ctn {
+  max-width: 325px;
+}
+.footer-ctn {
+  background-color: rgb(245, 245, 245);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1.25rem 0;
+}
+.footer-ctn > div {
+  max-width: 80rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-ctn .permission {
+  max-width: 20rem;
+}
+.ph-num-ctn {
+  border-radius: 0.75rem;
+  background-color: black;
+  padding: 0.23rem;
+  padding-left: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.ph-input {
+  display: flex;
+  align-items: center;
+}
+.ph-num-ctn input {
+  width: 11rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  color: rgba(255, 255, 255, 1);
+  padding: 0.25rem;
+  border-width: 0;
+  background: rgba(0, 0, 0, 1);
+  font-size: 16px;
+}
+.ph-num-ctn button {
+  line-height: 1.75rem;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(253, 239, 120, 1);
+  border-radius: 0.75rem;
+  margin-left: 0.5rem;
+  border-width: 0px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.permission {
+  display: flex;
+  padding: 1rem 0.5rem;
+  align-items: center;
+}
+.permission input {
+  border-width: 0px;
+  margin-right: 0.5rem;
+}
+.permission label {
+  line-height: 0.75rem;
+  font-size: 10px;
+}
