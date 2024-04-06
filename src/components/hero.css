@@ -3,11 +3,29 @@
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+}
 .hero h1 {
   font-size: 54px;
   line-height: 54px;
   font-weight: 400;
   margin: 0px;
+}
+.hero-img {
+  width: 420px;
+}
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  .hero-img {
+    width: 225px;
+    margin: 1rem auto;
+  }
 }
 .hero p {
   font-family: "Matter-Medium", sans-serif;
@@ -15,9 +33,6 @@
 }
 .text {
   width: 50%;
-}
-.hero-img {
-  width: 420px;
 }
 .bg-video {
   width: 100vw;

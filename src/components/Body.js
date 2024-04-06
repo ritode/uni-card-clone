@@ -56,6 +56,7 @@ export default function Body() {
       </section>
       <section className="body-section">
         <div className="ctn">
+          <img src="./images/one_percent_cashback.png" alt="1% cashback" />
           <div className="text">
             <span className="black">1% assured cashback on your spends.</span>
             <span className="grey">The more you spend, the more you earn.</span>
@@ -64,10 +65,7 @@ export default function Body() {
               withdrawals & international transactions.
             </p>
           </div>
-          <img src="./images/one_percent_cashback.png" alt="1% cashback" />
         </div>
-      </section>
-      <section className="body-section">
         <div className="ctn">
           <img src="./images/five_x_rewards.png" alt="5x rewards" />
           <div className="text">
@@ -75,14 +73,12 @@ export default function Body() {
             <span className="grey">only at the Uni Store.</span>
           </div>
         </div>
-      </section>
-      <section className="body-section">
         <div className="ctn">
+          <img src="./images/forex_globe.png" alt="globally 0 forex" />
           <div className="text">
             <span className="black">Zero Forex Markup. </span>
             <span className="grey">Go international, without any fees.</span>
           </div>
-          <img src="./images/forex_globe.png" alt="globally 0 forex" />
         </div>
       </section>
     </div>
